@@ -37,6 +37,7 @@ namespace Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter
             IMessageLogger logger,
             ITestCaseDiscoverySink discoverySink)
         {
+            System.Diagnostics.Debugger.Launch();
             ValidateArg.NotNull(sources, "sources");
             ValidateArg.NotNull(logger, "logger");
             ValidateArg.NotNull(discoverySink, "discoverySink");

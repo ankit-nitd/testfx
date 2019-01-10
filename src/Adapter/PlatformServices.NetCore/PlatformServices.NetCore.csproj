@@ -29,20 +29,42 @@
     <Compile Include="..\PlatformServices.Shared\netstandard1.0\Services\ns10TraceLogger.cs" Link="Services\ns10TraceLogger.cs" />
     <Compile Include="..\PlatformServices.Shared\netstandard1.3\Services\ns13TraceListener.cs" Link="Services\ns13TraceListener.cs" />
     <Compile Include="..\PlatformServices.Shared\netstandard1.3\Services\ns13TraceListenerManager.cs" Link="Services\ns13TraceListenerManager.cs" />
+    <Compile Include="Deployment\AssemblyLoadWorker.cs" />
+    <Compile Include="Deployment\DeploymentItem.cs" />
+    <Compile Include="Deployment\TestRunDirectories.cs" />
+    <Compile Include="Extentions\ExceptionExtensions.cs" />
     <Compile Include="Friends.cs" />
+    <Compile Include="RecursiveDirectoryPath.cs" />
+    <Compile Include="Resources\Resource.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\MSTestAdapterSettings.cs" />
+    <Compile Include="Services\TestContextPropertyStrings.cs" />
+    <Compile Include="Utilities\AssemblyUtility.cs" />
+    <Compile Include="Utilities\DeploymentUtility.cs" />
+    <Compile Include="Utilities\FileUtility.cs" />
+    <Compile Include="Utilities\IAssemblyUtility.cs" />
+    <Compile Include="Utilities\ReflectionUtility.cs" />
+    <Compile Include="Utilities\DeploymentItemUtility.cs" />
+    <Compile Include="Utilities\Validate.cs" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.TestPlatform.ObjectModel" Version="11.0.0" />
+    <PackageReference Include="Microsoft.TestPlatform.ObjectModel" Version="15.0.0" />
     <PackageReference Include="System.Diagnostics.TextWriterTraceListener" Version="4.3.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\PlatformServices.Interface\PlatformServices.Interface.csproj" />
   </ItemGroup>
-  
+
   <ItemGroup>
-    <Folder Include="Services\" />
+    <EmbeddedResource Update="Resources\Resource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(TestFxRoot)scripts\build\TestFx.targets" />
 </Project>
