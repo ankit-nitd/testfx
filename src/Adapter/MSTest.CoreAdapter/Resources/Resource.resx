@@ -317,4 +317,70 @@ Error: {1}</value>
   <data name="UTA_TestMethodExpectedParameters" xml:space="preserve">
     <value>Only data driven test methods can have parameters. Did you intend to use [DataRow] or [DynamicData]?</value>
   </data>
+  <data name="CannotFindFile" xml:space="preserve">
+    <value>Could not find file '{0}'.</value>
+  </data>
+  <data name="Common_CannotBeNullOrEmpty1" xml:space="preserve">
+    <value>The parameter should not be null or empty.</value>
+  </data>
+  <data name="DeploymentErrorBadDeploymentItem" xml:space="preserve">
+    <value>Test Run deployment issue: Bad deployment item: '{0}': output directory '{1}' specifies the item to be deployed outside deployment root directory which is not allowed.</value>
+  </data>
+  <data name="DeploymentErrorFailedToAccesOutputDirectory" xml:space="preserve">
+    <value>Test Run deployment issue: Failed to access output directory '{1}' specified by deployment item '{0}', the item will not be deployed: {2}: {3}</value>
+  </data>
+  <data name="DeploymentErrorFailedToAccessFile" xml:space="preserve">
+    <value>Test Run deployment issue: Failed to access the file '{0}': {1}: {2}</value>
+  </data>
+  <data name="DeploymentErrorFailedToCopyWithOverwrite" xml:space="preserve">
+    <value>Test Run deployment issue: Failed to copy file '{0}' to '{1}': {2}: {3}</value>
+  </data>
+  <data name="DeploymentErrorFailedToDeployDependencies" xml:space="preserve">
+    <value>Test Run deployment issue: Failed to deploy dependencies for test storage '{0}': {1}</value>
+  </data>
+  <data name="DeploymentErrorFailedToGetFileForDeploymentItem" xml:space="preserve">
+    <value>Test Run deployment issue: Failed to get the file for {0}: {1}: {2}</value>
+  </data>
+  <data name="DeploymentErrorGettingSatellite" xml:space="preserve">
+    <value>Test Run deployment issue: an error occurred while getting satellite assemblies for {0}: {1}: {2}</value>
+  </data>
+  <data name="DeploymentItem" xml:space="preserve">
+    <value>deployment item '{0}'</value>
+  </data>
+  <data name="DeploymentItemContainsInvalidCharacters" xml:space="preserve">
+    <value>Invalid deployment item: the specified path '{0}' or output directory '{1}' contains illegal characters.</value>
+  </data>
+  <data name="DeploymentItemOutputDirectoryCannotBeNull" xml:space="preserve">
+    <value>Invalid deployment item: the output directory cannot be null.</value>
+  </data>
+  <data name="DeploymentItemOutputDirectoryMustBeRelative" xml:space="preserve">
+    <value>Invalid deployment item: the specified output directory '{0}' is not relative.</value>
+  </data>
+  <data name="DeploymentItemPathCannotBeNullOrEmpty" xml:space="preserve">
+    <value>Invalid deployment item: the path must contain at least one character.</value>
+  </data>
+  <data name="DeploymentItemWithOutputDirectory" xml:space="preserve">
+    <value>deployment item '{0}' (output directory '{1}')</value>
+  </data>
+  <data name="InvalidSettingsXmlElement1" xml:space="preserve">
+    <value>MSTestAdapter encountered an unexpected element '{0}' in its settings '{1}'. Remove this element and try again.</value>
+  </data>
+  <data name="MissingDeploymentDependency" xml:space="preserve">
+    <value>Test Run deployment issue: The assembly or module '{0}' was not found. Reason: {1}</value>
+  </data>
+  <data name="MissingDeploymentDependencyWithoutReason" xml:space="preserve">
+    <value>Test Run deployment issue: The assembly or module '{0}' was not found.</value>
+  </data>
+  <data name="TestRunName" xml:space="preserve">
+    <value>{0}_{1} {2}</value>
+  </data>
+  <data name="UTA_DataSourceConfigurationSectionMissing" xml:space="preserve">
+    <value>Data source '{0}' cannot be found in the test configuration settings</value>
+  </data>
+  <data name="UTA_ErrorDataConnectionFailed" xml:space="preserve">
+    <value>The unit test adapter failed to connect to the data source or to read the data. For more information on troubleshooting this error, see "Troubleshooting Data-Driven Unit Tests" (http://go.microsoft.com/fwlink/?LinkId=62412) in the MSDN Library. Error details: {0}</value>
+  </data>
+  <data name="WrongNumberOfObjects" xml:space="preserve">
+    <value>Wrong number of objects for permutation. Should be greater than zero.</value>
+  </data>
 </root>
